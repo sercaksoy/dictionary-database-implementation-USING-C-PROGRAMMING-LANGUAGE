@@ -10,10 +10,12 @@ Lets say we have x different words and documents they occurs.</br>
 data.txt file starts with a line "LOAD FACTOR:(a float value comes from x/997)"</br>
 This line helps us to avoid from exceed the hash size.</br>
 Below that line, data.txt keeps the information in this format:</br>
+<pre>
 "word1,doc1.txt,doc2.txt,</br>
  word2,doc1.txt,</br>
  word3,doc2.txt,</br>
  word4,doc4.txt,doc1.txt,"</br>
+ </pre>
  The method to avoid collusion in the hash table settled 'double hashing' by the instructors.</br>
  
  ### Double Hashing
