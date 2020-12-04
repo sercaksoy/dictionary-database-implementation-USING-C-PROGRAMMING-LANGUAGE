@@ -25,7 +25,7 @@ Double hashing is a method to avoid collusion in the hashtable, for this purpose
 To insert any information into our hash table, information needs an index. Horner's method was settled for this purpose by the instructors.
 Horner's method decompose the words by their character values and their order in the word. We can use ASCII table to get character values for each.
 For this method we need to decide which prime number we are going to use. Several prime numbers work just fine for this algoritm but in this context, I decided to go with '31' because below 31, may not be enough to create the big numbers that I need and above 31, is may create meaninglessly large numbers.</br>
-
+<pre>
 To calculate this numbers I am writing about. This pseudo code is used:</br>
 double get_key(word,word_length):</br>
   R_HORNER_NUMBER = 31</br>
@@ -35,15 +35,15 @@ double get_key(word,word_length):</br>
     --i</br>
   end</br>
  return key</br>
-
+</pre>
 ### From an(almost)unique and large number to index
 
 We get our word and turned it into a key. But still it is not usable for our hash table. At least it is not efficient to use it before ' to hash ' process.
 In the -double hashing- section I already said that the program uses the double hashing algoritm to insert and search operations. Pseudo code of this process like this:
-
+<pre>
 int hash(key,i,hashSize):</br>
   h1 = key mod(hashSize)</br>
   h2 = 1 + key mod(hashSize-1) // In this line we can use any number below hashSize </br>
  return (h1 + i*h2) mod (hashSize)</br>
- 
+ </pre>
  Hardly(it gets easier as the table fills) but this function may generate non unique indexes, i value is given in the parameter to avoid this problem as I told in the -double hashing section-
