@@ -16,11 +16,13 @@ Below that line, data.txt keeps the information in this format:</br>
  word3,doc2.txt,</br>
  word4,doc4.txt,doc1.txt,"</br>
  </pre>
+
  The method to avoid collusion in the hash table settled 'double hashing' by the instructors.</br>
  
  ### Double Hashing
  
 Double hashing is a method to avoid collusion in the hashtable, for this purpose every key(I mean pre-key) has to undergo another hashing, return from the second hashing needs to be checked so it still does not cause another collusion problem. The second hashing part loops until an eye is found or exceed of size.
+
 
 ### Converting a String to a Key
 
@@ -49,3 +51,8 @@ int hash(key,i,hashSize):</br>
  return (h1 + i*h2) mod (hashSize)</br>
  </pre>
  Hardly(it gets easier as the table fills) but this function may generate non unique indexes, i value is given in the parameter to avoid this problem as I told in the -double hashing section-
+
+### Main functionality of the program
+
+Program saves all the information in the hash table into the data.txt and load from there every execute time. That means, terminating the program does not stop the functionality of our program. It actually resumes from where it pauses. And it is valid for every computer that have this program and file locally. 
+If we run this program on a server and the information is retrieved from there, it will be a(n)(almost)real database.
