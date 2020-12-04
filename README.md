@@ -36,7 +36,7 @@ double get_key(word,word_length):
   end
  return key
 
-### From a (almost)unique and large number to index
+### From an(almost)unique and large number to index
 
 We get our word and turned it into a key. But still it is not usable for our hash table. At least it is not efficient to use it before ' to hash ' process.
 In the -double hashing- section I already said that the program uses the double hashing algoritm to insert and search operations. Pseudo code of this process like this:
