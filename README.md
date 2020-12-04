@@ -1,4 +1,8 @@
 # dictionary-database-implementation-USING-C-PROGRAMMING-LANGUAGE
+## Main functionality of the program
+
+Program saves all the information in the hash table into the data.txt and load from there every execute time. That means, terminating the program does not stop the functionality of our program. It actually resumes from where it pauses. And it is valid for every computer that have this program and file locally. 
+If we run this program on a server and the information is retrieved from there, it will be a(n)(almost)real database.
 
 ## Programs GOAL 
 
@@ -51,8 +55,3 @@ int hash(key,i,hashSize):</br>
  return (h1 + i*h2) mod (hashSize)</br>
  </pre>
  Hardly(it gets easier as the table fills) but this function may generate non unique indexes, i value is given in the parameter to avoid this problem as I told in the -double hashing section-
-
-### Main functionality of the program
-
-Program saves all the information in the hash table into the data.txt and load from there every execute time. That means, terminating the program does not stop the functionality of our program. It actually resumes from where it pauses. And it is valid for every computer that have this program and file locally. 
-If we run this program on a server and the information is retrieved from there, it will be a(n)(almost)real database.
