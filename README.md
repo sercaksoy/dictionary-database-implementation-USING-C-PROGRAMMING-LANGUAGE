@@ -4,7 +4,7 @@
 Program saves all the information in the hash table into the data.txt and load from there every execute time. That means, terminating the program does not stop the functionality of our program. It actually resumes from where it pauses. And it is valid for every computer that have this program and file locally. 
 If we run this program on a server and the information is retrieved from there, it will be a(n)(almost)real database.
 
-## Programs GOAL 
+## Program's GOAL 
 
 Just to find in which documents a word occurs may take long time, if the way is searching sequally. Therefor this program keeps track of it ; our database is a .txt file which located in the same file directory with our .exe file.</br>
 Lets give a name to our .txt file, data.txt;</br>
